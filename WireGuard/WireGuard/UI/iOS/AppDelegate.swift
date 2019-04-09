@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.mainVC = mainVC
 
+        // Detection and setup of network accessibility
+        ZYNetworkAccessibity.setAlertEnable(true)
+        ZYNetworkAccessibity.start()
         return true
     }
 
